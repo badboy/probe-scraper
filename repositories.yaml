@@ -179,7 +179,11 @@ libraries:
       - netwerk/metrics.yaml
       - netwerk/protocol/http/metrics.yaml
     ping_files:
+      - browser/components/newtab/pings.yaml
       - toolkit/components/glean/pings.yaml
+      - toolkit/components/glean/tests/test_pings.yaml
+      - toolkit/components/telemetry/pings.yaml
+      - toolkit/mozapps/update/pings.yaml
     tag_files:
       - toolkit/components/glean/tags.yaml
     variants:
@@ -207,7 +211,10 @@ applications:
       - toolkit/components/pdfjs/metrics.yaml
     ping_files:
       - browser/components/newtab/pings.yaml
+      - toolkit/components/glean/pings.yaml
+      - toolkit/components/glean/tests/test_pings.yaml
       - toolkit/components/telemetry/pings.yaml
+      - toolkit/mozapps/update/pings.yaml
     tag_files:
       - toolkit/components/glean/tags.yaml
     dependencies:
@@ -259,7 +266,10 @@ applications:
       - toolkit/xre/metrics.yaml
     ping_files:
       - browser/components/newtab/pings.yaml
+      - toolkit/components/glean/pings.yaml
+      - toolkit/components/glean/tests/test_pings.yaml
       - toolkit/components/telemetry/pings.yaml
+      - toolkit/mozapps/update/pings.yaml
     tag_files:
       - toolkit/components/glean/tags.yaml
     dependencies:
