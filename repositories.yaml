@@ -164,6 +164,21 @@ libraries:
         branch: main
         dependency_name: nimbus
 
+  - library_name: sync-manager
+    description: Sync Manager to integrate multiple sync engines/stores
+    notification_emails:
+      - lougenia@mozilla.com
+      - sync-team@mozilla.com
+    url: https://github.com/mozilla/application-services
+    metrics_files:
+      - components/sync_manager/metrics.yaml
+    ping_files:
+      - components/sync_manager/pings.yaml
+    variants:
+      - v1_name: sync-manager
+        branch: main
+        dependency_name: sync-manager
+
   - library_name: gecko
     description: The browser engine developed by Mozilla
     notification_emails:
@@ -378,16 +393,8 @@ applications:
     metrics_files:
       - Client/metrics.yaml
       - Storage/metrics.yaml
-      # The Sync/* files are meant to be a stop-gap measure, see
-      # https://mozilla-hub.atlassian.net/browse/SYNC-3008, until
-      # the Sync component from A-S is able to send Glean metrics.
-      - Sync/metrics.yaml
     ping_files:
       - Client/pings.yaml
-      # The Sync/* files are meant to be a stop-gap measure, see
-      # https://mozilla-hub.atlassian.net/browse/SYNC-3008, until
-      # the Sync component from A-S is able to send Glean metrics.
-      - Sync/pings.yaml
     tag_files:
       - Client/tags.yaml
     branch: main
@@ -398,6 +405,7 @@ applications:
       - org.mozilla.components:service-glean
       - nimbus
       - org.mozilla.appservices:logins
+      - sync-manager
     moz_pipeline_metadata:
       topsites-impression:
         expiration_policy:
