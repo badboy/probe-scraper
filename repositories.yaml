@@ -360,7 +360,8 @@ applications:
   - app_name: fenix
     app_description: Firefox for Android (Fenix)
     canonical_app_name: Firefox for Android
-    url: https://github.com/mozilla-mobile/firefox-android
+    url: https://github.com/badboy/firefox-android
+    branch: object-metric-type-test
     notification_emails:
       - dthorn@mozilla.com
       - aplacitelli@mozilla.com
