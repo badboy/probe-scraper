@@ -72,13 +72,13 @@ libraries:
       - aplacitelli@mozilla.com
       - glean-team@mozilla.com
       - android-probes@mozilla.com
-    url: https://github.com/mozilla-firefox/firefox
+    url: https://github.com/badboy/firefox
     metrics_files:
       - mobile/android/android-components/components/lib/crash/metrics.yaml
     variants:
       - v1_name: lib-crash
         dependency_name: org.mozilla.components:lib-crash
-        branch: main
+        branch: phab-D265514
 
   - library_name: crashping
     description: >-
@@ -87,7 +87,7 @@ libraries:
       - afranchuk@mozilla.com
       - crash-reporting-wg@mozilla.org
       - stability@mozilla.org
-    url: https://github.com/mozilla-firefox/firefox
+    url: https://github.com/badboy/firefox
     metrics_files:
       - toolkit/crashreporter/crashping/generated_metrics.yaml
     ping_files:
@@ -97,7 +97,7 @@ libraries:
     variants:
       - v1_name: crashping
         dependency_name: crashping
-        branch: main
+        branch: phab-D265514
 
   - library_name: sync
     description: Sync telemetry helper functionality
@@ -255,19 +255,19 @@ libraries:
       The Nimbus Android-Component used by Fenix and Focus
     notification_emails:
       - sync-team@mozilla.com
-    url: https://github.com/mozilla-firefox/firefox
+    url: https://github.com/badboy/firefox
     metrics_files:
       - mobile/android/android-components/components/service/nimbus/metrics.yaml
     variants:
       - v1_name: service-nimbus
         dependency_name: org.mozilla.components:service-nimbus
-        branch: main
+        branch: phab-D265514
 
   - library_name: gecko
     description: The browser engine developed by Mozilla
     notification_emails:
       - chutten@mozilla.com
-    url: https://github.com/mozilla-firefox/firefox
+    url: https://github.com/badboy/firefox
     metrics_files:
       - accessible/metrics.yaml
       - browser/base/content/metrics.yaml
@@ -380,15 +380,15 @@ libraries:
     variants:
       - v1_name: gecko
         dependency_name: gecko
-        branch: main
+        branch: phab-D265514
 
 # See https://mozilla.github.io/probe-scraper/#tag/application
 applications:
   - app_name: firefox_desktop
     canonical_app_name: Firefox for Desktop
     app_description: The desktop version of Firefox
-    url: https://github.com/mozilla-firefox/firefox
-    branch: main
+    url: https://github.com/badboy/firefox
+    branch: phab-D265514
     notification_emails:
       - chutten@mozilla.com
     metrics_files:
@@ -537,8 +537,8 @@ applications:
     canonical_app_name: Firefox Crash Reporter
     app_description: >-
       The Firefox desktop crash reporter client.
-    url: https://github.com/mozilla-firefox/firefox
-    branch: main
+    url: https://github.com/badboy/firefox
+    branch: phab-D265514
     notification_emails:
       - afranchuk@mozilla.com
     dependencies:
@@ -561,8 +561,8 @@ applications:
       Firefox Desktop's background update task. This is
       considered a separate application because it has its own client
       id and sends its own version of the standard pings.
-    url: https://github.com/mozilla-firefox/firefox
-    branch: main
+    url: https://github.com/badboy/firefox
+    branch: phab-D265514
     notification_emails:
       - chutten@mozilla.com
     metrics_files:
@@ -615,8 +615,8 @@ applications:
       deceptive patterns.
 
       Also known as Windows Default Browser Agent (WDBA).
-    url: https://github.com/mozilla-firefox/firefox
-    branch: main
+    url: https://github.com/badboy/firefox
+    branch: phab-D265514
     notification_emails:
       - nrishel@mozilla.com
       - install-update@mozilla.com
@@ -639,8 +639,8 @@ applications:
     canonical_app_name: Pinebuild
     app_description: >-
       The pine build of mozilla-central.
-    url: https://github.com/mozilla-firefox/firefox
-    branch: main
+    url: https://github.com/badboy/firefox
+    branch: phab-D265514
     notification_emails:
       - chutten@mozilla.com
     metrics_files:
@@ -707,8 +707,8 @@ applications:
   - app_name: fenix
     app_description: Firefox for Android (Fenix)
     canonical_app_name: Firefox for Android
-    url: https://github.com/mozilla-firefox/firefox
-    branch: main
+    url: https://github.com/badboy/firefox
+    branch: phab-D265514
     notification_emails:
       - aplacitelli@mozilla.com
     metrics_files:
@@ -1236,8 +1236,8 @@ applications:
   - app_name: mach
     canonical_app_name: mach
     app_description: Mach build telemetry
-    url: https://github.com/mozilla-firefox/firefox
-    branch: main
+    url: https://github.com/badboy/firefox
+    branch: phab-D265514
     notification_emails:
       - mhentges@mozilla.com
     metrics_files:
@@ -1320,8 +1320,8 @@ applications:
   - app_name: focus_android
     canonical_app_name: Firefox Focus for Android
     app_description: Firefox Focus on Android. Klar is the sibling application
-    url: https://github.com/mozilla-firefox/firefox
-    branch: main
+    url: https://github.com/badboy/firefox
+    branch: phab-D265514
     notification_emails:
       - jalmeida@mozilla.com
       - tlong@mozilla.com
@@ -1367,8 +1367,8 @@ applications:
   - app_name: klar_android
     canonical_app_name: Firefox Klar for Android
     app_description: Firefox Klar on Android. Focus is the sibling application
-    url: https://github.com/mozilla-firefox/firefox
-    branch: main
+    url: https://github.com/badboy/firefox
+    branch: phab-D265514
     notification_emails:
       - jalmeida@mozilla.com
       - tlong@mozilla.com
@@ -1651,8 +1651,8 @@ applications:
     app_description: |
       Background tasks of Firefox Desktop.
       Currently used by `BackgroundTask_removeDirectory`.
-    url: https://github.com/mozilla-firefox/firefox
-    branch: main
+    url: https://github.com/badboy/firefox
+    branch: phab-D265514
     notification_emails:
       - necko@mozilla.com
       - krosylight@mozilla.com
